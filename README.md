@@ -46,7 +46,36 @@ The magazine editors have some requested modifications for the database before y
 
 ## Exploratory Analysis
 
-Exploratory Analysis
+Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
+
+Use NoSQL_analysis_starter.ipynb for this section of the challenge.
+
+Some notes to be aware of while you are exploring the dataset:
+
+RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
+Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
+The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
+Use the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
+
+Unless otherwise stated, for each question:
+
+Use count_documents to display the number of documents contained in the result.
+
+Display the first document in the results using pprint.
+
+Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
+
+1. Which establishments have a hygiene score equal to 20?
+
+2. Which establishments in London have a RatingValue greater than or equal to 4?
+
+Hint: The London Local Authority has a longer name than "London" so you will need to use $regex as part of your search.
+
+3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+
+Hint: You will need to compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
+
+4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 
 ### Dependencies
 
@@ -55,42 +84,12 @@ Exploratory Analysis
 
 * Using Jupyter Notebooks or Visual Studio Code for coding and data visualizations
 
-* *WeatherPY
-* import matplotlib.pyplot as plt
-* import pandas as pd
-* import numpy as np
-* import requests
-* import time
-* from scipy.stats import linregress
-
-## Import APIs from GEOAPIFY for VacationPY
-* import hvplot.pandas
-* import pandas as pd
-* import requests
-
 ### Installing
 
 * No modifications needed to be made to files/folders
 
 ## Help
 
-The city data that you generate is based on random coordinates and different query times, so your outputs will not be an exact match to the provided starter notebook.
-
-If you'd like a refresher on the geographic coordinate system, this siteLinks to an external site. has great information.
-
-Take some time to study the OpenWeatherMap API. Based on your initial study, you should be able to answer basic questions about the API: Where do you request the API key? Which Weather API in particular will you need? What URL endpoints does it expect? What JSON structure does it respond with? Before you write a line of code, you should have a crystal-clear understanding of your intended outcome.
-
-A starter code for citipy has been provided. However, if you're craving an extra challenge, push yourself to learn how it works by using the citipy Python libraryLinks to an external site.. Before you try to incorporate the library in your analysis, start with simple test cases outside of your main script to confirm that you are using it correctly. Often, when introduced to a new library, learners spend hours trying to figure out errors in their code when a simple test case can save you a lot of time and frustration.
-
-You will need to apply your critical thinking skills to understand how and why we're recommending these tools. What is citipy used for? Why would you use it in conjunction with the OpenWeatherMap API? How would you do so?
-
-While building your script, pay attention to the cities you are using in your query pool. Are you covering the full range of latitudes and longitudes? Or are you choosing 500 cities from one region of the world? Even if you were a geography genius, simply listing 500 cities based on your personal selection would create a biased dataset. Try to think of ways that you can counter these selection issues.
-
-      Hint: Consider the full range of latitudes.
-
-Once you have computed the linear regression for one relationship, you will follow a similar process for all other charts. Optionally, try to create a function that will create these charts based on different parameters. (Note: there will be no extra points for completing this.)
-
-Remember that each coordinate will trigger a separate call to the Google API. If you're creating your own criteria to plan your vacation, try to reduce the results in your DataFrame to 10 or fewer cities.
 
 ## Authors
 
