@@ -77,10 +77,10 @@ Hint: You will need to compare the geocode to find the nearest locations. Search
 
 4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 
+![Screenshot 2023-09-21 115218](https://github.com/Connextstrategy/nosql-challenge/assets/18508699/99ab8913-1ee1-4d8e-a251-323a9fea11e6)
+
+
 ### Dependencies
-
-
-## Import APIs from OpenWeatherMap API & citipy to determine the cities based on latitude and longitude for WeatherPY
 
 * Using Jupyter Notebooks or Visual Studio Code for coding and data visualizations
 
