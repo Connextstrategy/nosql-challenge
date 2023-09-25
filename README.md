@@ -83,6 +83,7 @@ Hint: You will need to compare the geocode to find the nearest locations. Search
 ### Dependencies
 
 * Using Jupyter Notebooks or Visual Studio Code for coding and data visualizations
+* Used MongoCompass to install initial establishments.json because could not load via mongosh
 
 ### Installing
 
