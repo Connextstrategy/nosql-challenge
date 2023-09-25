@@ -23,7 +23,7 @@ The UK Food Standards Agency evaluates various establishments across the United 
 5. Assign the establishments collection to a variable to prepare the collection for use.
 
 
-## Update the Database
+## Update the Database (Eat_Safe_Love_Update_Database)
 
 Use NoSQL_setup_starter.ipynb for this section of the challenge.
 
@@ -44,7 +44,7 @@ The magazine editors have some requested modifications for the database before y
 * Use update_many to convert latitude and longitude to decimal numbers.
 * Use update_many to convert RatingValue to integer numbers.
 
-## Exploratory Analysis
+## Exploratory Analysis ((Eat_Safe_Love_Exploratory_Analysis)
 
 Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
 
